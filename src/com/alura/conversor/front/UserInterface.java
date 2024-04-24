@@ -19,9 +19,10 @@ public class UserInterface {
             System.out.println("4 - BRL para COP");
             System.out.println("5 - COP para ARS");
             System.out.println("6 - CLP para BOB");
-            System.out.println("7 - SAIR");
+            System.out.println("7 - Imprimir historico de conversoes");
+            System.out.println("8 - Sair");
             System.out.println("Escolha uma opção valida");
-            System.out.println("**************************************\n");
+            System.out.println("*****************************************************\n");
 
             int option = scanner.nextInt();
 
@@ -64,6 +65,9 @@ public class UserInterface {
                     System.out.println("O valor " + clpParaBOB + " [CLP] convertido para BOB é = " + valueCLP);
                     break;
                 case 7:
+                    Converter.imprimirValoresConvertidos();
+                    break;
+                case 8:
                     sair = true;
                     break;
             }
